@@ -9,7 +9,7 @@
 @section('header')
     <style>
         body {
-            background: #202340;
+            background: whitesmoke;
             width: 100vw;
             height: 100vh;
         }
@@ -22,11 +22,11 @@
 @endsection
 
 @section('main')
-    <section class="pt-2 container pb-5">
-        <div class="card text-center border-2">
+    <section class="pt-2 container pb-5" >
+        <div class="card text-center border-2" style="background-color: #06c3ee">
             <div class="card-body">
                 <h2 class="card-title">Dashboard Admin</h2>
-                <h4 class="card-text text-body-secondary">
+                <h4 class="card-text">
                     Halaman Dashboard Admin
                 </h4>
             </div>
@@ -71,7 +71,7 @@
 @endsection
 
 @section('footer')
-    <div class="fixed-bottom p-3" style="background-color: #8D99AE;">
+    <div class="fixed-bottom p-3" style="background-color: #06c3ee;">
         <div class="d-flex align-items-center justify-content-between small">
             <div class="text-muted">Copyright &copy; Thrift Shop 2023</div>
         </div>

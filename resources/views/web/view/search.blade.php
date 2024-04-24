@@ -9,7 +9,7 @@
 @section('header')
     <style>
         body {
-            background-color: #202340;
+            background-color: whitesmoke;
             width: 100vw;
             height: 100vh;
         }
@@ -57,16 +57,16 @@
 @endsection
 
 @section('footer')
-    <div class="container-flex text-center p-4" style="background: #A269FF">
-        <div class="card text-center" style="background: #A269FF">
-            <div class="card-header" style="background: #A269FF">
+    <div class="container-flex text-center p-4" style="background: #06c3ee">
+        <div class="card text-center" style="background: #06c3ee">
+            <div class="card-header" style="background: #06c3ee">
             </div>
             <div class="card-body">
                 <h5 class="card-title">Thrift Shop</h5>
                 <p class="card-text">Your Wallet is Our Best Friend</p>
-                <a href="#" class="btn btn-primary">Affordable Fashion, Unbeatable Prices</a>
+                <a href="#" class="btn" style="color: #a9e4f1">Affordable Fashion, Unbeatable Prices</a>
             </div>
-            <div class="card-footer text-body-secondary" style="background: #A269FF">
+            <div class="card-footer text-body-secondary" style="background: #06c3ee">
                 Copyright &copy; Thrift Shop 2023
             </div>
         </div>

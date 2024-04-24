@@ -9,7 +9,7 @@
 @section('header')
     <style>
         body {
-            background: #202340;
+            background: whitesmoke;
             width: 100vw;
             height: 100vh;
         }
@@ -24,9 +24,9 @@
 @section('main')
     <section class="pt-2 container pb-5">
         <div class="card text-center border-2">
-            <div class="card-body">
+            <div class="card-body" style="background-color: #06c3ee">
                 <h2 class="card-title">Kategori Pakaian</h2>
-                <h4 class="card-text text-body-secondary">Halaman Kategori Pakaian</h4>
+                <h4 class="card-text " style="color: white">Halaman Kategori Pakaian</h4>
             </div>
         </div>
         <div class="container-fluid px-4 pt-4 pb-5">
@@ -53,7 +53,7 @@
                     </div>
                 @endif
                 <center>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    <button type="button" class="btn" style="background-color: #06c3ee" data-bs-toggle="modal"
                         data-bs-target="#insertPakaianModal">
                         Tambah Pakaian
                     </button>
@@ -108,7 +108,7 @@
                                     aria-labelledby="updatePakaianModalLabel_{{ $items->pakaian_id }}" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
-                                            <div class="modal-header">
+                                            <div class="modal-header" style="background-color: #06c3ee">
                                                 <h1 class="modal-title fs-5"
                                                     id="updatePakaianModalLabel_{{ $items->pakaian_id }}">Ubah
                                                     Data Pakaian</h1>
@@ -160,7 +160,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="submit" class="btn btn-primary">Simpan</button>
+                                                    <button type="submit" class="btn" style="background-color: #06c3ee">Simpan</button>
                                                 </div>
                                             </form>
                                         </div>
@@ -173,7 +173,7 @@
                                     aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
-                                            <div class="modal-header">
+                                            <div class="modal-header" style="background-color: #06c3ee">
                                                 <h1 class="modal-title fs-5"
                                                     id="deletePakaianModalLabel_{{ $items->pakaian_id }}">
                                                     Konfirmasi Hapus</h1>
@@ -203,7 +203,7 @@
                                 aria-labelledby="insertPakaianModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
-                                        <div class="modal-header">
+                                        <div class="modal-header" style="background-color: #06c3ee">
                                             <h1 class="modal-title fs-5" id="insertPakaianModalLabel">Tambah Data Pakaian
                                             </h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -247,7 +247,7 @@
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="submit" class="btn btn-primary">Simpan</button>
+                                                <button type="submit" class="btn" style="background-color: #06c3ee">Simpan</button>
                                             </div>
                                         </form>
                                     </div>
@@ -263,7 +263,7 @@
 @endsection
 
 @section('footer')
-    <div class="fixed-bottom p-3 bg-dark-subtle">
+    <div class="fixed-bottom p-3" style="background-color: #06c3ee">
         <div class="d-flex align-items-center justify-content-between small">
             <div class="text-muted">Copyright &copy; Thrift Shop 2023</div>
         </div>

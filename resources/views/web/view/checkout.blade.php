@@ -12,7 +12,7 @@
 @section('header')
     <style>
         body {
-            background-color: #202340;
+            background-color: whitesmoke;
             width: 100vw;
             height: 100vh;
         }
@@ -96,7 +96,7 @@
                                     </td>
                                 </tr>
                             @endforeach
-                            <input type="hidden" name="user" value="2">
+                            <input type="hidden" name="user" value="{{ $user->user_id }}">
                             <input type="hidden" name="tanggal">
                             <input type="hidden" name="status" value="beli">
                             <tr>
@@ -144,7 +144,7 @@
                             @endforeach
                     </div>
                     <div class="d-grid m-4">
-                        <button type="submit" form="insert_pembelian" class="btn btn-primary">Simpan</button>
+                        <button type="submit" form="insert_pembelian" class="btn" style="background: #06c3ee">Simpan</button>
                     </div>
                 @else
                     <label class="card text-bg-danger p-2">
@@ -152,7 +152,7 @@
                     </label>
             </div>
             <div class="d-grid m-4">
-                <button type="submit" form="insert_pembelian" class="btn btn-primary disabled">Simpan</button>
+                <button type="submit" form="insert_pembelian" class="btn disabled" style="background: #06c3ee">Simpan</button>
             </div>
         @endif
         </form>
@@ -206,9 +206,9 @@
             window.onload = updateTotalHarga;
         </script>
     @else
-        <h3 class="text-light m-3">Anda tidak memiliki Pakaian untuk dibeli</h3>
+        <h3 class=" m-3" style="color: #06c3ee">Anda tidak memiliki Pakaian untuk dibeli</h3>
         <hr />
-        <h3 class="text-light m-3">Riwayat Pembelian</h3>
+        <h3 class="m-3" style="color: #06c3ee">Riwayat Pembelian</h3>
         <div class="table-responsive">
             <table class="table align-middle table-bordered table-hover">
                 <thead class="align-middle text-center">
@@ -271,7 +271,7 @@
                             aria-labelledby="viewPembelianModalLabel_{{ $items->pembelian_id }}" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
-                                    <div class="modal-header">
+                                    <div class="modal-header" style="background-color: #06c3ee">
                                         <h1 class="modal-title fs-5"
                                             id="viewPembelianModalLabel_{{ $items->pembelian_id }}">Lihat Detail
                                             Data Pembelian Pakaian</h1>
@@ -292,7 +292,7 @@
                                                     {{ $pakaian->pakaian_nama }} - Rp.
                                                     {{ $detail->detail_pembelian_total_harga }}
                                                     <span class="badge rounded-pill"
-                                                        style="background-color: #8423ff">Jumlah :
+                                                        style="background-color: #06c3ee">Jumlah :
                                                         {{ $detail->detail_pembelian_jumlah }}</span>
                                                 </li>
                                             @endforeach
@@ -311,7 +311,7 @@
                             aria-labelledby="updatePembelianModalLabel_{{ $items->pembelian_id }}" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
-                                    <div class="modal-header">
+                                    <div class="modal-header" style="background-color: #06c3ee">
                                         <h1 class="modal-title fs-5"
                                             id="updatePembelianModalLabel_{{ $items->pembelian_id }}">Ubah
                                             Data Pembelian Pakaian</h1>
@@ -357,7 +357,7 @@
                                             </div>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="submit" class="btn btn-primary">Simpan</button>
+                                            <button type="submit" class="btn" style="background: #06c3ee">Simpan</button>
                                         </div>
                                     </form>
                                 </div>

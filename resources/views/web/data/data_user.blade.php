@@ -9,7 +9,7 @@
 @section('header')
     <style>
         body {
-            background: #202340;
+            background: whitesmoke;
             width: 100vw;
             height: 100vh;
         }
@@ -24,9 +24,9 @@
 @section('main')
     <section class="pt-2 container pb-5">
         <div class="card text-center border-2">
-            <div class="card-body">
+            <div class="card-body" style="background-color: #06c3ee">
                 <h2 class="card-title">Data User</h2>
-                <h4 class="card-text text-body-secondary">Halaman Data User</h4>
+                <h4 class="card-text" style="color: white">Halaman Data User</h4>
             </div>
         </div>
         <div class="container-fluid px-4 pt-4 pb-5">
@@ -53,7 +53,7 @@
                     </div>
                 @endif
                 <center>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#insertUserModal">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#insertUserModal" style="background-color: #06c3ee">
                         Tambah User
                     </button>
                 </center>
@@ -78,14 +78,10 @@
                                 <tr>
                                     <td class="text-center">{{ $loop->iteration }}</td>
                                     <td class="text-center">
-                                        @if ($items->user_profil_url === '' || $items->user_profil_url === null)
-                                            <img width="100px" height="100px" src="{{ asset('img/user.png') }}"
-                                                alt="..." class="img-profile img-thumbnail">
-                                        @else
+                                        
                                             <img width="100px" height="100px"
                                                 src="{{ asset('storage/user/profile/' . basename($items->user_profil_url)) }}"
                                                 alt="..." class="img-profile img-thumbnail">
-                                        @endif
                                     </td>
                                     <td>{{ $items->user_fullname }}</td>
                                     <td>{{ $items->user_username }}</td>
@@ -143,7 +139,7 @@
                                     aria-labelledby="updateUserModalLabel_{{ $items->user_id }}" aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content">
-                                            <div class="modal-header">
+                                            <div class="modal-header" style="background-color: #06c3ee">
                                                 <h1 class="modal-title fs-5"
                                                     id="updateUserModalLabel_{{ $items->user_id }}">Ubah
                                                     Data User</h1>
@@ -235,7 +231,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="submit" class="btn btn-primary">Simpan</button>
+                                                    <button type="submit" class="btn" style="color: #06c3ee">Simpan</button>
                                                 </div>
                                             </form>
                                         </div>
@@ -247,7 +243,7 @@
                                     aria-labelledby="deleteUserModalLabel_{{ $items->user_id }}" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
-                                            <div class="modal-header">
+                                            <div class="modal-header" style="background-color: #06c3ee">
                                                 <h1 class="modal-title fs-5"
                                                     id="deleteUserModalLabel_{{ $items->user_id }}">
                                                     Konfirmasi Hapus</h1>
@@ -277,7 +273,7 @@
                                 aria-labelledby="insertUserModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-content">
-                                        <div class="modal-header">
+                                        <div class="modal-header" style="background-color: #06c3ee">
                                             <h1 class="modal-title fs-5" id="insertUserModalLabel">Tambah
                                                 Data User</h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -368,7 +364,7 @@
 @endsection
 
 @section('footer')
-    <div class="fixed-bottom p-3 bg-dark-subtle">
+    <div class="fixed-bottom p-3" style="background-color: #06c3ee" >
         <div class="d-flex align-items-center justify-content-between small">
             <div class="text-muted">Copyright &copy; Thrift Shop 2023</div>
         </div>

@@ -9,7 +9,7 @@
 @section('header')
     <style>
         body {
-            background-color: #202340;
+            background-color: whitesmoke;
             width: 100vw;
             height: 100vh;
         }
@@ -25,7 +25,7 @@
     @php
         $kategori_pakaian = \App\Models\Kategori_Pakaian::find($detail->pakaian_kategori_pakaian_id);
     @endphp
-    <div class="container-fluid p-3" style="background: #A269FF">
+    <div class="container-fluid p-3" style="background: whitesmoke">
         @if (session('success'))
             <div class="alert alert-success alert-dismissible fade show" role="alert">
                 <strong>Berhasil!</strong> {{ session('success') }}
@@ -90,7 +90,7 @@
                                 @csrf
                                 <input type="hidden" name="product_id" value="{{ $detail->pakaian_id }}">
                                 <input type="hidden" name="product_jumlah" value="1">
-                                <button type="submit" class="btn btn-primary mt-2">Add to Cart</button>
+                                <button type="submit" class="btn mt-2" style="background: #06c3ee">Tambah ke Keranjang</button>
                             </form>
                         @endif
                     </div>
@@ -116,7 +116,7 @@
                             <h5 class="card-title">{{ $items->pakaian_nama }}</h5>
                             <p class="card-text">Rp. {{ $items->pakaian_harga }}</p>
                             <a href="{{ route('detail', ['pakaian_id' => $items->pakaian_id]) }}"
-                                class="btn btn-primary">Get Detail</a>
+                                class="btn" style="background: #06c3ee">Lihat Detail</a>
                         </div>
                     </div>
                 @endif
@@ -126,16 +126,16 @@
 @endsection
 
 @section('footer')
-    <div class="container-flex text-center p-4" style="background: #A269FF">
-        <div class="card text-center" style="background: #A269FF">
-            <div class="card-header" style="background: #A269FF">
+    <div class="container-flex text-center p-4" style="background: #06c3ee">
+        <div class="card text-center" style="background: #06c3ee">
+            <div class="card-header" style="background: #06c3ee">
             </div>
             <div class="card-body">
                 <h5 class="card-title">Thrift Shop</h5>
                 <p class="card-text">Your Wallet is Our Best Friend</p>
                 <a href="#" class="btn btn-primary">Affordable Fashion, Unbeatable Prices</a>
             </div>
-            <div class="card-footer text-body-secondary" style="background: #A269FF">
+            <div class="card-footer text-body-secondary" style="background: #06c3ee">
                 Copyright &copy; Thrift Shop 2023
             </div>
         </div>

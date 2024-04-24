@@ -7,7 +7,7 @@
 @section('header')
     <style>
         body {
-            background: radial-gradient(circle at top right, transparent 10%, #dcdaff 10%, #dcdaff 20%, transparent 21%), radial-gradient(circle at left bottom, transparent 10%, #dcdaff 10%, #dcdaff 20%, transparent 21%), radial-gradient(circle at top left, transparent 10%, #dcdaff 10%, #dcdaff 20%, transparent 21%), radial-gradient(circle at right bottom, transparent 10%, #dcdaff 10%, #dcdaff 20%, transparent 21%), radial-gradient(circle at center, #dcdaff 30%, transparent 31%);
+            background: radial-gradient(circle at top right, transparent 10%, #a9e4f1 10%, #a9e4f1 20%, transparent 21%), radial-gradient(circle at left bottom, transparent 10%, #a9e4f1 10%, #a9e4f1 20%, transparent 21%), radial-gradient(circle at top left, transparent 10%, #a9e4f1 10%, #a9e4f1 20%, transparent 21%), radial-gradient(circle at right bottom, transparent 10%, #a9e4f1 10%, #a9e4f1 20%, transparent 21%), radial-gradient(circle at center, #a9e4f1 30%, transparent 31%);
             background-size: 4em 4em;
             background-color: #ffffff;
             opacity: 1
@@ -62,13 +62,13 @@
                         <p class="text-danger">{{ $message }}</p>
                     @enderror
                     <div class="form-group my-3 d-grid">
-                        <button class="btn btn-primary" type="submit">Login</button>
+                        <button class="btn" style="background-color: #06c3ee;color:white" type="submit">Login</button>
                     </div>
                 </form>
             </div>
             <div class="card-footer">
                 <a href="{{ route('register') }}" class="link-underline link-underline-opacity-0">
-                    <p class="text-center" style="color: #8423ff;">
+                    <p class="text-center" style="color: #06c3ee;">
                         Tidak punya akun? Silahkan mendaftar
                     </p>
                 </a>

@@ -81,7 +81,7 @@ Route::group(['middleware' => ['auth', 'role', 'akses:admin']], function () {
     Route::get('/review_pakaian', [Pages_Controller::class, 'review_pakaianPage'])->name('review_pakaian');
 });
 
-Route::group(['middleware' => ['auth', 'role', 'akses:admin']], function () {
+Route::group(['middleware' => ['auth', 'role']], function () {
     Route::get('/data_user', [Pages_Controller::class, 'data_userPage'])->name('data_user');
 });
 
@@ -177,7 +177,7 @@ Route::group(['middleware' => ['auth', 'role', 'akses:admin']], function () {
     Route::get('/update_data_user/{user_id}', [User_Controller::class, 'updateData_User'])->name('update_data_user');
 });
 
-Route::group(['middleware' => ['auth', 'role', 'akses:admin']], function () {
+Route::group(['middleware' => ['auth', 'role']], function () {
     Route::patch('/data_user/{user_id}', [User_Controller::class, 'update'])->name('data_user.update');
 });
 

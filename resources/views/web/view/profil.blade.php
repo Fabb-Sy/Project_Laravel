@@ -12,7 +12,7 @@
 @section('header')
     <style>
         body {
-            background-color: #202340;
+            background-color: whitesmoke !important;moke;
             width: 100vw;
             height: 100vh;
         }
@@ -25,7 +25,7 @@
 
 @section('main')
     @include('layouts.nav')
-    <div class="container-flex text-center pt-3 pb-3" style="background: #A269FF">
+    <div class="container-flex text-center pt-3 pb-3" style="background: whitesmoke">
         @if (session('success'))
             <div class="alert alert-success alert-dismissible fade show" role="alert">
                 <strong>Berhasil!</strong> {{ session('success') }}
@@ -100,7 +100,7 @@
 
                 <label style="width: 200px" class="card text-bg-light p-2">
                     <img height="50px" src="{{ asset('img/' . $imageName) }}" class="mx-auto d-block" alt="...">
-                    <button class="m-2 btn btn-{{ $hasPaymentMethod ? 'warning' : 'primary' }}" type="button"
+                    <button style="background: #06c3ee" class="m-2 btn btn-{{ $hasPaymentMethod ? 'warning' : 'primary' }}" type="button"
                         data-bs-toggle="modal" data-bs-target="#{{ $modalId }}" name="metode_pembayaran">
                         {{ $hasPaymentMethod ? 'Ubah Metode Pembayaran' : 'Tambahkan Metode' }}
                     </button>
@@ -110,7 +110,7 @@
                     aria-labelledby="{{ $modalId }}Label" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
-                            <div class="modal-header">
+                            <div class="modal-header" style="background: #06c3ee">
                                 <h1 class="modal-title fs-5" id="{{ $modalId }}Label">
                                     Metode Pembayaran</h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -141,7 +141,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="submit"
-                                        class="btn btn-{{ $hasPaymentMethod ? 'warning' : 'primary' }}">{{ $hasPaymentMethod ? 'Ubah' : 'Simpan' }}</button>
+                                        class="btn btn-{{ $hasPaymentMethod ? 'warning' : 'primary' }}" style="background: #06c3ee">{{ $hasPaymentMethod ? 'Ubah' : 'Simpan' }}</button>
                                 </div>
                             </form>
                         </div>
@@ -155,7 +155,7 @@
         aria-labelledby="updateUserModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header" style="background: #06c3ee">
                     <h1 class="modal-title fs-5" id="updateUserModalLabel">Ubah
                         Profil</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -208,7 +208,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary">Simpan</button>
+                        <button type="submit" class="btn" style="background: #06c3ee">Simpan</button>
                     </div>
                 </form>
             </div>
@@ -219,7 +219,7 @@
         aria-labelledby="logoutModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header" style="background: #06c3ee">
                     <h1 class="modal-title fs-5" id="logoutModalLabel">
                         Konfirmasi Log-out</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -238,16 +238,16 @@
 @endsection
 
 @section('footer')
-    <div class="container-flex text-center p-4" style="background: #A269FF">
-        <div class="card text-center" style="background: #A269FF">
-            <div class="card-header" style="background: #A269FF">
+    <div class="container-flex text-center p-4" style="background: #06c3ee">
+        <div class="card text-center" style="background: #06c3ee">
+            <div class="card-header" style="background: #06c3ee">
             </div>
             <div class="card-body">
                 <h5 class="card-title">Thrift Shop</h5>
                 <p class="card-text">Your Wallet is Our Best Friend</p>
-                <a href="#" class="btn btn-primary">Affordable Fashion, Unbeatable Prices</a>
+                <a href="#" class="btn" style="background-color: #a9e4f1">Affordable Fashion, Unbeatable Prices</a>
             </div>
-            <div class="card-footer text-body-secondary" style="background: #A269FF">
+            <div class="card-footer text-body-secondary" style="background: #06c3ee">
                 Copyright &copy; Thrift Shop 2023
             </div>
         </div>

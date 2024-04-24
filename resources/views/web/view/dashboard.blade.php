@@ -9,7 +9,7 @@
 @section('header')
     <style>
         body {
-            background-color: #202340;
+            background-color: #fff;
             width: 100vw;
             height: 100vh;
         }
@@ -24,7 +24,7 @@
     @include('layouts.nav')
     @include('components.hero')
     <div class="container-fluid text-center">
-        <h3 class="text-light">Pakaian Terbaru</h3>
+        <h3 class="" style="color: #06c3ee">Pakaian Terbaru</h3>
         <div class="d-flex flex-wrap justify-content-evenly">
             @foreach ($data_pakaian as $items)
                 @php
@@ -33,7 +33,7 @@
                     $kategoriStatus = $kategori->kategori_pakaian_status;
                 @endphp
                 @if ($pakaianStok > 0 && $kategoriStatus > 0)
-                    <div class="card text-bg-dark m-2" style="width: 18rem;">
+                    <div class="card m-2" style="width: 18rem;" style="background-color: #06c3ee">
                         @if ($items->pakaian_gambar_url === '' || $items->pakaian_gambar_url === null)
                             <img width="100%" height="100%" src="{{ asset('img/clothes.png') }}" class="card-img-top"
                                 alt="...">
@@ -46,7 +46,7 @@
                             <h5 class="card-title">{{ $items->pakaian_nama }}</h5>
                             <p class="card-text">Rp. {{ $items->pakaian_harga }}</p>
                             <a href="{{ route('detail', ['pakaian_id' => $items->pakaian_id]) }}"
-                                class="btn btn-primary">Get Detail</a>
+                                class="btn" style="background-color: #06c3ee">Lihat Detail</a>
                         </div>
                     </div>
                 @endif
@@ -56,16 +56,16 @@
 @endsection
 
 @section('footer')
-    <div class="container-flex text-center p-4" style="background: #A269FF">
-        <div class="card text-center" style="background: #A269FF">
-            <div class="card-header" style="background: #A269FF">
+    <div class="container-flex text-center p-4" style="background: #06c3ee">
+        <div class="card text-center" style="background: #06c3ee">
+            <div class="card-header" style="background: #06c3ee">
             </div>
             <div class="card-body">
                 <h5 class="card-title">Thrift Shop</h5>
-                <p class="card-text">Your Wallet is Our Best Friend</p>
-                <a href="#" class="btn btn-primary">Affordable Fashion, Unbeatable Prices</a>
+                <p class="card-text">Dompet Anda adalah Sahabat Terbaik Kami</p>
+                <a href="#" class="btn" style="background-color: #a9e4f1">Fashion Terjangkau, Harga Tak Tertandingi.</a>
             </div>
-            <div class="card-footer text-body-secondary" style="background: #A269FF">
+            <div class="card-footer text-body-secondary" style="background: #06c3ee">
                 Copyright &copy; Thrift Shop 2023
             </div>
         </div>

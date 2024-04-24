@@ -26,7 +26,7 @@ class Data_Pakaian extends Model
     {
         $pakaian = $data;
         if ($gambar) {
-            $path = $gambar->store('public/pakaian/gambar');
+            $path = $gambar->store('pakaian/gambar');
             $pakaian['pakaian_gambar_url'] = $path;
         }
         DB::table('pakaian')->insert($pakaian);
@@ -53,7 +53,7 @@ class Data_Pakaian extends Model
             Storage::delete($pakaian->pakaian_gambar_url);
         }
         if ($data) {
-            $path = $data->store('public/pakaian/gambar');
+            $path = $data->store('pakaian/gambar');
             $pakaian->pakaian_gambar_url = $path;
         }
         $pakaian->save();
@@ -64,7 +64,7 @@ class Data_Pakaian extends Model
         if ($pakaian) {
             if ($gambar && $pakaian->pakaian_gambar_url) {
                 Storage::delete($pakaian->pakaian_gambar_url);
-                $path = $gambar->store('public/pakaian/gambar');
+                $path = $gambar->store('pakaian/gambar');
                 $data['pakaian_gambar_url'] = $path;
             }
             DB::table('pakaian')->where('pakaian_id', $id)->update($data);

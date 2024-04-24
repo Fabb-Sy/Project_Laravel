@@ -1,4 +1,4 @@
-<nav class="navbar shadow-xl" style="background-color: #8423FF;">
+<nav class="navbar shadow-xl" style="background-color: #06c3ee;">
     <div class="container-fluid">
         <button type="button" class="btn btn-light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
             aria-controls="offcanvasScrolling">
@@ -6,13 +6,13 @@
         </button>
         <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" style="color: white;"
             tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-            <div class="offcanvas-header" style="background-color: #8423FF; color: white;">
-                <h3 class="offcanvas-title" id="offcanvasScrollingLabel">
+            <div class="offcanvas-header" style="background-color: #06c3ee; color: white; padding: 8px">
+                <h4 class="offcanvas-title" id="offcanvasScrollingLabel">
                     Admin Dashboard
-                </h3>
+                </h4>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body" style="background-color: #202340;">
+            <div class="offcanvas-body" style="background-color: #5891bd;">
                 <div class="text-light">
                     <h6>MENU</h6>
                 </div>
@@ -54,11 +54,10 @@
                     </div>
                 </div>
             </div>
-            <div class="offcanvas-footer" style="background-color: #8D99AE; color: white;">
-                <div class="grid ps-4 m-3">
-                    <h6>Loged In As :</h6>
+            <div class="offcanvas-footer" style="background-color: #06c3ee; color: white;">
+                <div class="grid ps-4" style="padding: 13px">
                     <h6>
-                        <i class="bi bi-person-lines-fill"></i> Admin
+                        <i class="bi bi-person-lines-fill"></i> Login Sebagai : Admin
                     </h6>
                 </div>
             </div>

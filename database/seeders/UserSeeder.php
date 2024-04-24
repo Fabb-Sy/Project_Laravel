@@ -15,10 +15,10 @@ class UserSeeder extends Seeder
     {
         Data_User::insert([
             [
-                'user_id' => rand(pow(10, 15), pow(10, 16) - 1),
+                'user_id' => '1',
                 'user_fullname' => 'Administrator',
                 'user_username' => 'admin',
-                'user_password' => bcrypt('AkunAdminPerpus'),
+                'user_password' => bcrypt('admin'),
                 'user_email' => 'adminshop@gmail.com',
                 'user_notelp' => '085804561414',
                 'user_alamat' => 'Jln. Kepemimpinan, Kec. Siswa, Kel. Bawahan No. 15206',
@@ -28,10 +28,10 @@ class UserSeeder extends Seeder
                 'updated_at' => '2023-08-01 23:00:00',
             ],
             [
-                'user_id' => rand(pow(10, 15), pow(10, 16) - 1),
+                'user_id' => '2',
                 'user_fullname' => 'Pengguna',
                 'user_username' => 'pengguna',
-                'user_password' => bcrypt('AkunPenggunaPerpus'),
+                'user_password' => bcrypt('pengguna'),
                 'user_email' => 'penggunashop@gmail.com',
                 'user_notelp' => '081332314613',
                 'user_alamat' => 'Jln. Keanggotaan, Kec. Siswa, Kel. Bawahan No. 15206',
