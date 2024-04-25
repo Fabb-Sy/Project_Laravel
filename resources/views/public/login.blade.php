@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Login - Web Perpustakaan')
+@section('title', 'Login - Web Thrift')
 
 @section('icon', 'img/book_1.png')
 
