@@ -1,6 +1,6 @@
 
 
-<?php $__env->startSection('title', 'Login - Web Perpustakaan'); ?>
+<?php $__env->startSection('title', 'Login - Web Thrift'); ?>
 
 <?php $__env->startSection('icon', 'img/book_1.png'); ?>
 

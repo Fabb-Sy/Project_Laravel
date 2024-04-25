@@ -38,7 +38,7 @@ class Data_User extends Authenticatable
     {
         $user = $data;
         if ($profil) {
-            $path = $profil->store('public/user/profile');
+            $path = $profil->store('user/profile');
             $user['user_profil_url'] = $path;
         }
         DB::table('user')->insert($user);
@@ -65,7 +65,7 @@ class Data_User extends Authenticatable
             Storage::delete($user->user_profil_url);
         }
         if ($data) {
-            $path = $data->store('public/user/profile');
+            $path = $data->store('user/profile');
             $user->user_profil_url = $path;
         }
         $user->save();
@@ -76,7 +76,7 @@ class Data_User extends Authenticatable
         if ($user) {
             if ($profil && $user->user_profil_url) {
                 Storage::delete($user->user_profil_url);
-                $path = $profil->store('public/user/profile');
+                $path = $profil->store('user/profile');
                 $data['user_profil_url'] = $path;
             }
             DB::table('user')->where('user_id', $id)->update($data);

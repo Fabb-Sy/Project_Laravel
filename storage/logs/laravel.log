@@ -913,3 +913,7 @@ Stack trace:
 [2024-04-25 01:49:53] local.INFO: 🟢 Metode_Pembayaran Use Alfrizal berhasil ditambahkan  
 [2024-04-25 01:50:04] local.INFO: 🟢 Data_Pembelian  berhasil ditambahkan  
 [2024-04-25 01:50:59] local.NOTICE: 🟡 Data_User  berhasil diubah  
+[2024-04-25 01:58:17] local.ALERT: 🔴 Data_Pakaian dengan ID : 2 berhasil dihapus  
+[2024-04-25 02:02:03] local.ALERT: 🔴 Data_User dengan ID : 2 berhasil dihapus  
+[2024-04-25 02:03:26] local.INFO: 🟢 User  berhasil login  
+[2024-04-25 02:03:50] local.NOTICE: 🟡 Data_User  berhasil diubah  
